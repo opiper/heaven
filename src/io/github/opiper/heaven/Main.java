@@ -2,6 +2,7 @@ package io.github.opiper.heaven;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import io.github.opiper.heaven.commands.CraftCommand;
 import io.github.opiper.heaven.commands.TestUICommand;
 import io.github.opiper.heaven.listeners.DeathListener;
 import io.github.opiper.heaven.listeners.InventoryClickListener;
@@ -18,6 +19,7 @@ public class Main extends JavaPlugin {
 		new TestUICommand(this);
 		new InventoryClickListener(this);
 		TestUI.initialize();
+		new CraftCommand(this);
 	
 	}
 }
