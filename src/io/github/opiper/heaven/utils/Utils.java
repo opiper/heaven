@@ -18,6 +18,7 @@ public class Utils {
 	public static ItemStack createItem(Inventory inv, String materialId, int amount, int invSlot, String displayName, String... loreString) {
 		
 		ItemStack item;
+		@SuppressWarnings({ "unchecked", "rawtypes" })
 		List<String> lore = new ArrayList();
 		
 		item = new ItemStack(Material.matchMaterial(materialId), amount);
@@ -36,9 +37,11 @@ public class Utils {
 		
 	}
 	
+	@SuppressWarnings("deprecation")
 	public static ItemStack createItemByte(Inventory inv, String materialId, int byteId, int amount, int invSlot, String displayName, String... loreString) {
 		
 		ItemStack item;
+		@SuppressWarnings({ "rawtypes", "unchecked" })
 		List<String> lore = new ArrayList();
 		
 		item = new ItemStack(Material.matchMaterial(materialId), amount, (short) byteId);
