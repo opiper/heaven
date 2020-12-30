@@ -1,0 +1,27 @@
+main: io.github.opiper.heaven.Main
+name: Heaven
+version: 1.5
+author: Oliver Piper
+description: Heaven plugin
+api-version: 1.16
+
+commands:
+  test: 
+    
+  craft: 
+    
+  sb:
+    
+  sethome:
+    description: Sets your current location to a home of the given name
+    usage: |
+           /<command> <name> 
+           Example: /home house
+           
+  home:
+    description: Goes to home
+    usage: /<command> <name>
+    
+  spawn:
+    
+  
